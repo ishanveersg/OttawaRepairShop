@@ -1,0 +1,65 @@
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-container-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.device {
+    width: 250px;
+    height: 250px;
+    margin: 45px;
+    border: 2px solid #8f8f8f; 
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px #bfbfbf;
+}
+.device:hover { 
+    background-color: red; 
+    color: white;
+}
+
+.location {
+    width: 450px;
+    height: 115px;
+    margin-right : 20px;
+    margin-bottom: 20px;
+    border: 2px solid #8f8f8f; 
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 8px #bfbfbf;
+}
+.location:hover { 
+    background-color: red; 
+    color: white;
+}
+
+.problem {
+    width: 400px;
+    height: 100px;
+    margin-right : 20px;
+    margin-bottom: 20px;
+    border: 2px solid #8f8f8f; 
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 8px #bfbfbf;
+}
+
+.problem:hover { 
+    background-color: red; 
+    color: white;
+}
+
+.profile-picture{
+    width: 300px;
+    height: 300px;
+    margin: 45px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}

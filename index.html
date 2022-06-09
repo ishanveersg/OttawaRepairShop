@@ -5,22 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Ottawa Repair Shop</title>
 </head>
 <body>
-    <nav class="nav.navbar.navbar-expand-lg">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm bg-light py-3">
         <div class="container">
-            <a href="#" class="navbar-brand">
-                <!-- Logo Image -->
-                <img src="images/Vector logo - No Background.svg" width="200px"></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">   
-                    <a href="about.html" class="nav-link">About Us</a>
+            <a href="#" class="navbar-brand"><img src="images/Vector logo - No Background.svg" width="300px"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" style="color: black; padding-right:30px">About Us</a>
                     </li>
+                    <button type="button" class="btn btn-danger">Track your repairs</button>
                 </ul>
+            </div>
         </div>
-       
     </nav> 
+
+     <!-- Title -->
+    <section style="margin-top: 100px; margin-bottom: 50px;">
+        <div class="container text-center">
+            <h1><span style="font-weight: bold">Select your device to get started</span> </h1>
+            <h4>We offer <span style="color: red; font-style: italic; font-weight: bold;">same day</span> repairs for most devices!</h4>
+        </div>
+    </section>
+    <!-- Devices -->
+    <section>
+
+        <div class="container">
+            <div class="flexbox-container">
+                <div class="device" id="nextpage">
+                    <div class="flexbox-container-vertical" >
+                        <img src="images/Devices/mobile.png" alt="mobile image" style="max-width: 60%; margin-top: 20px;">
+                        <span class="p-4" style="font-weight: bold;">Mobile Phone</span>
+                    </div>
+                 </div>
+                 <div class="device">
+                    <div class="flexbox-container-vertical" >
+                        <img src="images/Devices/laptop.png" alt="laptop image" style="max-width: 60%; margin-top: 20px;">
+                        <span class="p-4" style="font-weight: bold;">Laptop</span>
+                    </div>
+                 </div>
+                 <div class="device">
+                    <div class="flexbox-container-vertical" >
+                        <img src="images/Devices/console.png" alt="console image" style="max-width: 60%; margin-top: 20px;">
+                        <span class="p-4" style="font-weight: bold;">Console</span>
+                    </div>
+                 </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        document.getElementById("nextpage").onclick = function () {
+            location.href = "location.html";
+        };
+    </script>
+
 </body>
 </html>

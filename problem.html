@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Ottawa Repair Shop</title>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-sm bg-light py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img id="home" src="images/Vector logo - No Background.svg" width="300px"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" style="color: black; padding-right:30px">About Us</a>
+                    </li>
+                    <button type="button" class="btn btn-danger">Track your repairs</button>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+     <!-- Title -->
+    <section style="margin-top: 40px; margin-bottom: 50px;">
+        <div class="container text-center" style="margin-bottom: 40px;">
+            <span style="font-size: 40px;">Select the problem with your device</span>
+        </div>
+
+    <!-- Problems -->    
+        <div class="flexbox-container">
+            <div class="flexbox-container-vertical">
+                <div class="problem" id="nextpage">
+                    <div class="flexbox-container">
+                        <img src="images/Repair Icons/cracked_screen.png" alt="Cracked Screen Icon" style="max-width: 14%; margin: 4px">
+                        <span style="margin-top: 15px; margin-left: 20px; font-size: 25px;">Cracked Screen</span>
+                    </div>
+                </div>
+                <div class="problem">
+                    <div class="flexbox-container">
+                        <img src="images/Repair Icons/software_bugs.png" alt="Software Bugs Icon" style="max-width: 14%; margin: 4px">
+                        <span style="margin-top: 15px; margin-left: 20px; font-size: 25px;">Software Bugs</span>
+                    </div>
+                </div>
+                <div class="problem">
+                    <div class="flexbox-container">
+                        <img src="images/Repair Icons/not_charging.png" alt="Not charging Icon" style="max-width: 14%; margin: 4px">
+                        <span style="margin-top: 15px; margin-left: 20px; font-size: 25px;">Not Charging</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flexbox-container-vertical">
+                <div class="problem">
+                    <div class="flexbox-container">
+                        <img src="images/Repair Icons/water_damage.png" alt="Water Damage Icon" style="max-width: 14%; margin: 4px">
+                        <span style="margin-top: 15px; margin-left: 20px; font-size: 25px;">Water Damage</span>
+                    </div>
+                </div>
+                <div class="problem">
+                    <div class="flexbox-container">
+                        <img src="images/Repair Icons/battery_replacement.png" alt="Battery replacement Icon" style="max-width: 14%; margin: 4px">
+                        <span style="margin-top: 15px; margin-left: 20px; font-size: 25px;">Battery replacement</span>
+                    </div>
+                </div>
+                <div class="problem">
+                    <div class="flexbox-container">
+                        <span style="margin-top: 15px; margin-left: 20px; font-size: 25px;">Other repairs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices -->
+    <section">
+        <div class="container" style="width: 860px">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Service</th>
+                    <th scope="col">Price estimation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Battery replacement</td>
+                    <td>$90 - $150</td>
+                  </tr>
+                  <tr>
+                    <td>Screen replacement</td>
+                    <td>$100 - $400</td>
+                  </tr>
+                  <tr>
+                      <td>Water damage</td>
+                      <td>$100 - $400</td>
+                  </tr>
+                  <tr>
+                    <td>Software bugs</td>
+                    <td>$10 - $50</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.getElementById("nextpage").onclick = function () {
+            location.href = "book.html";
+        };
+        document.getElementById("home").onclick = function () {
+        location.href = "index.html";
+        };
+    </script>
+</body>
+</html>
